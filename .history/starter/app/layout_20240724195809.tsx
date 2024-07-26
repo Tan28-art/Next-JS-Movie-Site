@@ -9,7 +9,7 @@ import { Open_Sans } from 'next/font/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
-const robotoMono = Roboto_Mono({
+const openSans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
 })
@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={robotoMono.className}>
-      <body>
+    <html lang="en" >
+      <body className={inter.className}>
         <Providers>
           <Header />
           {children}

@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={robotoMono.className}>
-      <body>
+    <html lang="en" className={openSans.className}>
+      <body className={inter.className}>
         <Providers>
           <Header />
           {children}

@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={robotoMono.className}>
-      <body>
+      <body className={inter.className}>
         <Providers>
           <Header />
           {children}

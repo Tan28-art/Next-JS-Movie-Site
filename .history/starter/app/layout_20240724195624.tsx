@@ -9,11 +9,6 @@ import { Open_Sans } from 'next/font/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
-const robotoMono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
 export const metadata: Metadata = {
   title: "Movie App",
   description: "Movie Search App",
@@ -25,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={robotoMono.className}>
-      <body>
+    <html lang="en">
+      <body className={inter.className}>
         <Providers>
           <Header />
           {children}

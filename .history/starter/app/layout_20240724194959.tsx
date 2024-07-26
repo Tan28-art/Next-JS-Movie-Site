@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import MenuItem from "@/components/MenuItem";
 import Providers from "./Providers";
-import { Open_Sans } from 'next/font/google'
 
 
 const inter = Inter({ subsets: ["latin"] });
-
-const robotoMono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: "Movie App",
@@ -25,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={robotoMono.className}>
-      <body>
+    <html lang="en">
+      <body className={inter.className}>
         <Providers>
           <Header />
           {children}
