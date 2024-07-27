@@ -4,7 +4,7 @@ export default function page() {
   return (
     <div className="space-y-4 p-2 px-5 mx-auto">
       <h1 className="text-2xl font-medium text-emerald-500">About Page</h1>
-      <div className = "lg:text-xl space-y-4">
+      <div className = "text-xl space-y-4">
           <p>
             Welcome to IMDb Clone, your go-to source for all things movies! Our goal
             is to provide a simple, easy-to-use platform where film enthusiasts can

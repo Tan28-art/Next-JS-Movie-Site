@@ -4,15 +4,15 @@ import "./globals.css";
 import Header from "@/components/Header";
 import MenuItem from "@/components/MenuItem";
 import Providers from "./Providers";
-import { Open_Sans } from "next/font/google";
-import NavBar from "@/components/NavBar";
+import { Open_Sans } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 const robotoMono = Roboto_Mono({
-  subsets: ["latin"],
-  display: "swap",
-});
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Movie App",
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Header />
-          <NavBar />
+          <Nav
           {children}
         </Providers>
       </body>
