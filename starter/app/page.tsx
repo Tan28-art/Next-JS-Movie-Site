@@ -15,7 +15,7 @@ export default async function App({ searchParams }: IAppProps) {
     "?api_key=" +
     API_KEY + "&language=en-US&page=1";
 
-  const res = await fetch(url);
+  const res = await fetch(url, {next: {revalidate: 10000}});
 
   const data = await res.json();
 
