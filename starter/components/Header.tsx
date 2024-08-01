@@ -20,9 +20,9 @@ export default function Header() {
         </div>
         <Link href="/" className="flex gap-1 items-center">
           <span className="text-2xl font-semibold bg-emerald-400 py-1 px-2 rounded-3xl">
-            IMDb
+            ViBe
           </span>
-          <span className="text-xl hidden sm:inline">Clone</span>
+          <span className="text-xl hidden sm:inline">Finder</span>
         </Link>
       </div>
     </div>
