@@ -45,7 +45,7 @@ export default async function page({ params }: any) {
 
         {/* Recommendations */}
       <div className="">
-        <div className="p-5">
+        <div className="p-5 mt-5">
             <h2 className="mb-2 sm:text-2xl text-xl font-semibold ">Recommendations</h2>
             <p className="sm:text-lg">If you liked "{data.title || data.name}", you might also like:</p>
         </div>

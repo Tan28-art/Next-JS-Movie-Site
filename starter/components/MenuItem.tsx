@@ -18,7 +18,7 @@ export default function MenuItem({ title, Icon, address }: MenuItemProps) {
   return (
     <Link href={address} className="hover:text-emerald-500">
       <Icon className="text-3xl sm:hidden" />
-      <p className="uppercase hidden sm:inline text-xl font-semibold">
+      <p className="uppercase hidden sm:inline text-2xl font-semibold">
         {title}
       </p>
     </Link>

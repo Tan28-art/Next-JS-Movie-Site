@@ -10,7 +10,7 @@ export interface IAppProps {
 
 export default function App({ result }: IAppProps) {
   return (
-    <div className="group rounded-3xl border-2 dark:border-slate-800 p-3 sm:hover:shadow-emerald-200 sm:shadow-lg transition-shadow duration-200 dark:shadow-slate-700 dark:hover:shadow-emerald-500">
+    <div className="group rounded-3xl border-2 dark:border-slate-800 p-3 w-screen sm:w-auto sm:m-0 sm:hover:shadow-emerald-200 sm:shadow-lg transition-shadow duration-200 dark:shadow-slate-700 dark:hover:shadow-emerald-500">
       <Link href={`/movie/${result.id}`}>
         <Image
           src={`https://image.tmdb.org/t/p/original/${
@@ -20,6 +20,7 @@ export default function App({ result }: IAppProps) {
           height={300}
           alt="/"
           className='rounded-2xl group-hover:opacity-85 transition-opacity duration-300 '
+          style={{ maxWidth: "100%", height: "auto" }}
         ></Image>
         <div className="">
           <h2 className='font-bold truncate'>

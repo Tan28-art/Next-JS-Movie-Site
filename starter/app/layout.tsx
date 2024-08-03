@@ -6,6 +6,7 @@ import MenuItem from "@/components/MenuItem";
 import Providers from "./Providers";
 import { Open_Sans } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import SearchBox from "@/components/SearchBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <NavBar />
+          
           {children}
         </Providers>
       </body>

@@ -19,7 +19,7 @@ export default function NavBarItem(props: IAppProps) {
         className={`hover:text-emerald-500 
             font-semibold ${
               genre === props.param
-              ? "underline underline-offset-8 decoration-dashed decoration-2 decoration-emerald-500 rounded-lg"
+              ? "underline underline-offset-8 decoration-dashed decoration-4 decoration-emerald-500 rounded-lg"
           : ""
       }
     `}
