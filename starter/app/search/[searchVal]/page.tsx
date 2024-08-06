@@ -10,19 +10,24 @@ interface props {
 
 export default async function App({ params }: props) {
   const search = params.searchVal;
-  log(search);
   const res = await fetch(
     `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${search}`
   );
 
   const data = await res.json();
-  console.log(data);
 
   return (
     <div>
+      {/* If no search results are found */}
       {data.results.length === 0 && (
-        <div className="flex items-center justify-center mt-64"><h1 className="sm:text-2xl text-xl text-center">No results found for "{search}"</h1></div>
+        <div className="flex items-center justify-center mt-64 ">
+          <h1 className="sm:text-2xl text-xl text-center">
+            No results found for "{search}"
+          </h1>
+        </div>
       )}
+
+      {/* If search results are found, displays data in card format */}
       {data.results.length !== 0 && <Results results={data.results} />}
     </div>
   );
