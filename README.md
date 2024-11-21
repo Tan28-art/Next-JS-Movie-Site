@@ -2,6 +2,10 @@
 
 This Movie App allows users to browse through and search for any movies or TV shows. Built using Next.js and Tailwind CSS, and deployed on Google Cloud.
 
+# Walkthrough
+
+https://github.com/user-attachments/assets/3f73bed0-23b5-4975-90e1-947b16523ec8
+
 # Home Page
 
 ![image](https://github.com/user-attachments/assets/acc6e4de-039f-4670-aeb4-94273a3f05a1)
@@ -21,3 +25,8 @@ This Movie App allows users to browse through and search for any movies or TV sh
 # Top Rated Page
 
 ![image](https://github.com/user-attachments/assets/b2718587-83d5-44e7-960f-5178df45176b)
+
+# Movie Page
+
+![image](https://github.com/user-attachments/assets/ad608944-1136-47bf-9294-a6537c0351a1)
+
